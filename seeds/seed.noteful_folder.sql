@@ -1,3 +1,3 @@
-INSERT INTO noteful_notes(title, id)
+INSERT INTO noteful_folders(title)
 VALUES
-('Sample Folder', 1);
+('Sample Folder');
