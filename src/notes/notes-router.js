@@ -8,10 +8,12 @@ const jsonParser = express.json();
 
 serializeNote = (note) =>({
     id:note.id,
-    title:xss(note.title),
+    name:xss(note.title),
+    modified: note.date_published,
+    folderId: note.folder_id,
     content:xss(note.content),
-    date_published: note.date_published,
-    folder_id: note.folder_id
+    
+    
 })
 
  notesRouter
