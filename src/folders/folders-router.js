@@ -27,6 +27,8 @@ serializeFolder = (folder) =>({
         const { title } = req.body;
         const newFolder = { title };
 
+        console.log(title)
+
         for (const [key, value] of Object.entries(newFolder))
             if(value == null )
                 return res.status(400).json({
